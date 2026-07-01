@@ -1,4 +1,14 @@
-###1. Go to kali.org -> Select the Virtual Machine pre-build image -> Load on Oracle Virtual Box
-- After the installationg, open the Terminal as Root and run those scripts:
+###1. Go to kali.org -> Select the Virtual Machine pre-build image -> Load on Oracle Virtual Box 
+### 1. Virtual Machine Setup on Kali.
+- Open **VirtualBox → Settings → Network**  
+- Set the adapter to **Bridge**  
+- After the installationg, open the Terminal as Root and Download FreeRDP3:
+sudo apt update
+sudo apt install freerdp3-x11   
+#This Will be used to Connect on the Active Directory Server and execute Credential Dumping Tool known as Mimikatz.
 
+# Exploring Insecure Administrator Credentials Utilized by the IT Support Team for Server Access:
+User: Administrator
+Password: SecrectPAssowrd123
 
+##Open the Powershell as Administrator and Execute the command to Download MImikatz:
