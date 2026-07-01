@@ -9,17 +9,13 @@ The goal is to isolate the network for controlled attack simulations and log gen
 
 ### 1. Virtual Machine Setup
 - Open **VirtualBox → Settings → Network**  
-- Set the adapter to **Internal Network**  
-- Name the network: `intnet`  
-- This ensures the VM is isolated for later attack simulations and log collection.
+- Set the adapter to **Bridge**  `  
+- This ensures the VM is communicating for later attack simulations and log collection.
 
 ### 2. Static IP Configuration
 - Navigate to: **Server Manager → Local Server → Properties → Ethernet → TCP/IP Protocol**  
-- Change from *Obtain an IP automatically* to:  
-  - **IP Address:** `192.169.10.10`  
-  - **Subnet Mask:** `255.255.255.0`  
-  - **Default Gateway:** *(leave blank, since everything runs on the internal network)*  
-
+- Change to *Obtain an IP automatically*.
+  
 ### 3. Name / Domain
 - Navigate to: **Server Manager → System Properties → Computer Name/Domain Changes**  
 - Set **Computer Name:** `ActiveCompanyDC` (Active Company Domain Controller)  
